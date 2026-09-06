@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-family: 'Poppins', sans-serif;
 }
 
 
@@ -14,28 +14,42 @@
   background-image: url("background-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-position: bottom;
 }
-
-.head h1 {
-  color: #00FF6C;
-  font-weight: lighter;
-}
-
-span{
-    font-weight:700;
-}
-
 
 .head {
+  height: 266px;
   display: flex;
   text-align: center;
   justify-content: space-between;
   padding: 20px 300px 0px 300px;
 }
 
-a{
-    color: white;
+
+.head h1 {
+  color: #00FF6C;
+  font-weight: lighter;
+}
+
+
+.head hr{
+  width: 90px;
+  height: 4.2px;
+  background-color: #00FF6C;
+  border: none;
+
+}
+
+.bold{
+  font-weight: bold;
+  /* font-size: 35px; */
+}
+
+
+.head a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: large;
 }
 
 nav{
@@ -43,16 +57,20 @@ nav{
     gap: 20px;
 }
 .content{
+    width:750px;
+    height: 256px;
     color: aliceblue;
     text-align: center;
     justify-content: center;
-    margin-top: 107px;
+    margin: auto;
+      font-size: 20px;
+
+}
+.content span{
+    font-weight: lighter;
+    font-size: 35px;
 }
 
-.bold{
-
-  font-weight: lighter;
-}
 
 #work-btn{
   margin-top: 50px;
@@ -60,7 +78,7 @@ nav{
   background: transparent;
   border: 1px solid #00FF6C;
   color: #00FF6C;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 #work-btn:hover{
@@ -69,34 +87,58 @@ nav{
   cursor: pointer;
 }
 
-.about{
-  width: 800px;
-  height: 500px;
+.container{
+  width: 720px;
+  height: 800px;
   margin: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
   padding-top: 50px;
-  background-color: aqua;
-}
-
-.about span{
-  color: #232323;
-  font: 26px montserrat;
-}
-
-p{
-  font-size: 20px;
-}
-a{
+  /* background-color: aqua; */
+  font-size: 35px;
   color: #232323;
 }
-.about hr{
+#about h2{
+  font-weight: bold;
+  font-size: 35px;
+}
+
+#about img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin: 20px 20px 40px 20px;
+}
+
+#about hr{
   width: 90px;
   height: 4.2px;
   background-color: #00FF6C;
-  margin: 16px 376.8px;
+  border:none;
+  margin:15px;
 }
 
+#about p{
+  font-size: 29px;
+  /* color: #232323; */
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+#lead{
+  font-size:235px;
+  font-weight: bold;
+  color:#00FF6C;
+}
+
+#about a{
+  color:#232323;
+  corsor: pointer;
+}
+#about a:hover{
+  color:#0bfc6f;
+}
 
 
